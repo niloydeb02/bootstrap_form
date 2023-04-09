@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <!--meta tag-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap Form</title>
+    <!--css links-->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/media.css">
+</head>
+<body>
+    <h1 class="text-align-center">BOOTSTRAP FORM</h1>
+    <form class="row g-3 needs-validation was-validated" novalidate="">
+      <!--first name start-->
+        <div class="col-md-6">
+            <label for="f_name" class="form-label">First name</label>
+            <input type="text" name="f_name" class="form-control  f_name" id="f_name" placeholder="Enter Your First Name...." required="">
+            <div class="valid-feedback">SUCCESSFUL!</div>
+            <div  class="invalid-feedback">Please Enter Your First Name</div>
+        </div>
+        <!--first name end-->
+
+        <!--last name start-->
+        <div class="col-md-6">
+            <label for="l_name" class="form-label">Last name</label>
+            <input type="text" name="l_name" placeholder="Enter Your Last Name..." class="form-control l_name" id="l_name" required="">
+            <div class="valid-feedback">SUCCESSFUL!</div>
+            <div  class="invalid-feedback">Please Enter Your Last Name</div>                                                                              
+        </div>
+       
+        <!--last name end-->
+        <div class="col-md-12">
+        <label for="u_name" class="form-label u_name">Username</label>
+        <div class="input-group has-validation">
+               <span class="input-group-text" id="inputGroupPrepend">@</span>
+               <input type="text" class="form-control" id="u_name"  required="">
+        <div class="valid-feedback">SUCCESSFUL!</div>
+          <div class="invalid-feedback">Please choose a username.</div>
+        </div>
+        </div>
+        <div class="col-md-4">
+             <label for="city" class="form-label city">City</label>
+             <input type="text" name="city" id="city" class="form-control city" required>
+        <div class="valid-feedback">SUCCESSFUL!</div>
+        <div class="invalid-feedback">Enter Your City Name...</div>
+        </div>
+        </div>
+        <div class="col-md-4">
+           <label for="area" class="form-label di">Area</label>
+           <select class="form-select area" id="area" required>
+               <option  selected disabled value=" value="MIRPUR">MIRPUR</option>
+                <option selected="" value="FARMGET">FARMGET</option>
+                 <option selected="" value="SAVAR">SAVAR</option>
+           </select>
+
+        </div>
+        <div class="col-md-4">
+            <label for="country" class="form-label country">Country</label>
+        <input type="text" name="country" id="country" class="form-control" value="BANGLADESH">
+            
+        </div>
+         <div class="col-12">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="check" required="">
+          <label class="form-check-label" for="check">                              
+            Agree to terms and conditions
+          </label>
+          <div class="invalid-feedback">
+            You must agree before submitting.
+          </div>
+        </div>
+      </div>
+        <div class="col-12">
+        <button class="btn btn-primary" type="submit">Submit form</button>
+      </div>
+    </form>
+
+    <div class="container text-center mt-5 ">
+        <div class="row mh bg-info align-items-start">
+            <div class="col bg-secondary item">COL-1</div>
+             <div class="col bg-secondary item">COL-1</div>
+              <div class="col bg-secondary item ">COL-1</div>
+        </div>
+    </div>
+
+ <div class="container text-center mt-5 ">
+        <div class="row mh bg-primary  align-items-center">
+            <div class="col-md-4">
+                <div class="item">COL-1</div>
+            </div>
+             <div class="col-md-4">
+                 <div class="item">COL-2</div>
+             </div>
+              <div class="col-md-4">
+                  <div class="item">COL-3</div>
+              </div>
+        </div>
+    </div>
+
+<div class="container text-center mt-5 ">
+        <div class="row mh bg-warning  align-items-end">
+            <div class="col-md-4">
+                <div class="item">COL-1</div>
+            </div>
+             <div class="col-md-4">
+                 <div class="item">COL-2</div>
+             </div>
+              <div class="col-md-4">
+                  <div class="item">COL-3</div>
+              </div>
+        </div>
+    </div>
+
+    <div class="container text-center mt-5 ">
+        <div class="row mh bg-success ">
+            <div class="col-md-4 align-self-start">
+                <div class="item">COL-1</div>
+            </div>
+             <div class="col-md-4 align-self-center">
+                 <div class="item">COL-2</div>
+             </div>
+              <div class="col-md-4 align-self-end">
+                  <div class="item">COL-3</div>
+              </div>
+        </div>
+    </div>
+
+<div class="grid mh text-center" style="--bs-columns: 3;">
+    <div class="grid">
+        <div><div class="item">Column</div></div>
+        <div><div class="item">Column</div></div>
+    </div>
+</div>
+
+
+
+<!--js links-->
+<link rel="stylesheet" type="text/css" href="js/bootstrap.bundle.min.js">
+<link rel="stylesheet" type="text/css" href="js/script.js">
+</body>
+</html>
